@@ -6,7 +6,7 @@ import com.patterns.creational.builder.components.Roof;
 import com.patterns.creational.builder.components.enumConst.Type;
 
 public class ExpensiveHouse {
-	
+
 	private Type type;
 	private int room;
 	private Pool pool;
@@ -14,7 +14,7 @@ public class ExpensiveHouse {
 	private Garage garage;
 	private Roof roof;
 	private int folks;
-	
+
 	public ExpensiveHouse(Type type, int room, Pool pool, int window, Garage garage, Roof roof) {
 		this.type = type;
 		this.room = room;
@@ -78,16 +78,12 @@ public class ExpensiveHouse {
 
 	public void setFolks(int folks) {
 		this.folks = folks;
-		
-		if(folks != 0){
+
+		if (folks != 0) {
 			System.out.println("----------");
-			System.out.println("Home has: "+folks+" folks");
+			System.out.println("Home has: " + folks + " folks");
 			System.out.println("----------");
 		}
 	}
-	
-	
-	
-	
 
 }
